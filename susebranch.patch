@@ -1,0 +1,92 @@
+diff -Naur plasma-mobile-config-0.4/appconfig/lowspacesuse plasma-mobile-config/appconfig/lowspacesuse
+--- plasma-mobile-config-0.4/appconfig/lowspacesuse	1970-01-01 01:00:00.000000000 +0100
++++ plasma-mobile-config/appconfig/lowspacesuse	2013-07-24 18:14:29.000000000 +0200
+@@ -0,0 +1,2 @@
++[General]
++WarnMinimumFreeSpace=0
+diff -Naur plasma-mobile-config-0.4/autostart/beagled-autostart.desktop plasma-mobile-config/autostart/beagled-autostart.desktop
+--- plasma-mobile-config-0.4/autostart/beagled-autostart.desktop	1970-01-01 01:00:00.000000000 +0100
++++ plasma-mobile-config/autostart/beagled-autostart.desktop	2013-07-24 18:14:29.000000000 +0200
+@@ -0,0 +1,2 @@
++[Desktop Entry]
++Hidden=true
+diff -Naur plasma-mobile-config-0.4/autostart/krunner.desktop plasma-mobile-config/autostart/krunner.desktop
+--- plasma-mobile-config-0.4/autostart/krunner.desktop	1970-01-01 01:00:00.000000000 +0100
++++ plasma-mobile-config/autostart/krunner.desktop	2013-07-24 18:14:29.000000000 +0200
+@@ -0,0 +1,23 @@
++[Desktop Entry]
++X-SuSE-translate=true
++TryExec=/nowhere
++Exec=krunner
++X-DBUS-StartupType=wait
++Name=KRunner
++Name[de]=KRunner
++Name[es]=KRunner
++Name[et]=KRunner
++Name[nl]=KRunner
++Name[pl]=KRunner
++Name[pt]=KRunner
++Name[pt_BR]=KRunner
++Name[sk]=KRunner
++Name[sv]=Kör program
++Name[uk]=KRunner
++Name[x-test]=xxKRunnerxx
++Type=Service
++X-KDE-StartupNotify=false
++OnlyShowIn=KDE;
++X-KDE-autostart-phase=0
++
++
+diff -Naur plasma-mobile-config-0.4/autostart/kupdateapplet-autostart.desktop plasma-mobile-config/autostart/kupdateapplet-autostart.desktop
+--- plasma-mobile-config-0.4/autostart/kupdateapplet-autostart.desktop	1970-01-01 01:00:00.000000000 +0100
++++ plasma-mobile-config/autostart/kupdateapplet-autostart.desktop	2013-07-24 18:14:29.000000000 +0200
+@@ -0,0 +1,2 @@
++[Desktop Entry]
++Hidden=true
+diff -Naur plasma-mobile-config-0.4/autostart/plasma-desktop.desktop plasma-mobile-config/autostart/plasma-desktop.desktop
+--- plasma-mobile-config-0.4/autostart/plasma-desktop.desktop	1970-01-01 01:00:00.000000000 +0100
++++ plasma-mobile-config/autostart/plasma-desktop.desktop	2013-07-24 18:14:29.000000000 +0200
+@@ -0,0 +1,27 @@
++[Desktop Entry]
++X-SuSE-translate=true
++TryExec=/nowhere
++Exec=plasma-desktop
++X-DBUS-StartupType=wait
++Name=Plasma Desktop Workspace
++Name[cs]=Pracovní plocha Plasma
++Name[de]=Plasma-Arbeitsflächenbereiche
++Name[es]=Espacio de trabajo del escritorio Plasma
++Name[et]=Plasma töölaua töötsoon
++Name[fr]=Espace de travail du bureau Plasma
++Name[ga]=Spás Oibre Deisce Plasma
++Name[km]=តំបន់​ធ្វើការ​ផ្ទៃតុ​ប្លាស្មា
++Name[nl]=Plasma Bureaubladwerkruimte
++Name[pl]=Przestrzeń pulpitu Plazmy
++Name[pt]=Espaço do Ecrã do Plasma
++Name[pt_BR]=Espaço de trabalho do Plasma
++Name[sv]=Arbetsyta för Plasma skrivbord
++Name[ug]=پلازما ئۈستەلئۈستى خىزمەت بوشلۇقى
++Name[uk]=Робочий простір стільниці Плазми
++Name[x-test]=xxPlasma Desktop Workspacexx
++Type=Service
++X-KDE-StartupNotify=false
++OnlyShowIn=KDE;
++X-KDE-autostart-phase=0
++
++
+diff -Naur plasma-mobile-config-0.4/skel/dotkde/share/config/plasma-device-appletsrc plasma-mobile-config/skel/dotkde/share/config/plasma-device-appletsrc
+--- plasma-mobile-config-0.4/skel/dotkde/share/config/plasma-device-appletsrc	2013-08-14 17:06:35.000000000 +0200
++++ plasma-mobile-config/skel/dotkde/share/config/plasma-device-appletsrc	2013-07-24 18:14:29.000000000 +0200
+@@ -15,6 +15,12 @@
+ wallpaperpluginmode=
+ zvalue=0
+ 
++[Containments][22][Applets][35]
++geometry=0,0,488,474
++immutability=1
++plugin=org.kde.active.welcome
++zvalue=0
++
+ [Containments][22][General]
+ FirstStartup=false
+ ItemsGeometries=InformationElement:534,158,178,158;Bookmark:0,158,356,158;Image:356,0,178,158;Application:534,0,178,158;nfo%3AApplication:688,0,172,131;nfo%3ABookmark:516,0,344,131;Applet-35:0,0,516,524;Applet-37:516,131,344,393;Applet-39:860,0,344,262;Applet-41:859,-5,344,262;Applet-42:860,0,344,262;

@@ -1,0 +1,25 @@
+From 7db667e526ce1391f310328d9b06096832c4fbf8 Mon Sep 17 00:00:00 2001
+From: Josua Mayer <not@given.privacy>
+Date: Sat, 15 Sep 2012 14:50:06 +0200
+Subject: [PATCH 1/2] on opensuse KDE4 dotfolder is called .kde4
+
+---
+ CMakeLists.txt |    2 +-
+ 1 Datei geändert, 1 Zeile hinzugefügt(+), 1 Zeile entfernt(-)
+
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index 6968108..7e43224 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -25,7 +25,7 @@ configure_file(
+ )
+ 
+ install(DIRECTORY appconfig/ DESTINATION ${CONFIG_INSTALL_DIR})
+-install(DIRECTORY skel/dotkde/ DESTINATION /etc/skel/.kde)
++install(DIRECTORY skel/dotkde/ DESTINATION /etc/skel/.kde4)
+ install(DIRECTORY skel/dotconfig/ DESTINATION /etc/skel/.config)
+ #install(DIRECTORY profile.d/*.sh DESTINATION /etc/profile.d/)
+ install(DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/profile.d DESTINATION /etc/ PATTERN .cmake EXCLUDE)
+-- 
+1.7.10.4
+
