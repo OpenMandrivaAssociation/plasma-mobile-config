@@ -1,7 +1,7 @@
 Name:		plasma-mobile-config
 Summary:	Default configuration for plasma-mobile
 Version:	0.4
-Release:	1
+Release:	2
 License:	GPLv2.0
 Group:		Graphical desktop/KDE
 Url:		http://plasma-active.org/
