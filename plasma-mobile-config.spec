@@ -4,7 +4,7 @@ Version:	0.4
 Release:	2
 License:	GPLv2.0
 Group:		Graphical desktop/KDE
-Url:		http://plasma-active.org/
+Url:		https://plasma-active.org/
 BuildArch:	noarch
 Source0:	%{name}-%{version}.tar.xz
 Patch0:		susebranch.patch
